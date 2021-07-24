@@ -30,7 +30,7 @@ div.login-box{
 }
 
 .sign-in-confirm{
-    background: orange;
+    background: rgb(255, 166, 0);
     width: 60%;
     position: absolute;
     height: 15%;
@@ -64,6 +64,6 @@ div.no-acc a{
 }
  
 div.no-acc a:hover{
-    color: rgb(255, 200, 97);
+    color: rgb(255, 178, 44);
     
 }

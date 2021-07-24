@@ -11,7 +11,7 @@
 <body>
 
     <nav>
-        <h1>Home page</h1>
+        <h1>On The Way</h1>
         <ul>
             <li><a href='/'>Home</a></li>
             <li><a href='/templates/network.html'>Network</a></li>
@@ -19,14 +19,39 @@
         </ul>
     </nav>
 
+
+
     <div class='intro-box'>
-        <img src='apple_map.jpeg'>
+        <div class='intro-lines'>
+            <div class="line-decor orange"></div>
+            <div class="line-decor blue"></div>
+        </div>
+
+        <div class="intro-text">
+            <h3>What does it do?</h3>
+            <br>
+            <p>Your circle can now pick each other up On The Way! To help preserve
+                our limited supply of oil and petroleum, as well as city congestion, On The Way 
+                gives its users an opportunity to help our communities as well as socialiize with one
+                another. 
+            </p>
+            <br>
+            <br>
+            <h3>How does it work?</h3> 
+            <br>
+            <p>
+                It's simple! First, you need to make a network; people who you would be
+                comfortable riding with. Next, put up offers to drive or requests to pick up, and your network
+                will cover you up from there.
+            </p>
+        </div>
+        <image src='{{url_for("static", filename="images/apple_map.jpeg")}}' width='600' height='400' class='map-img'></image>
     </div>
 
     <div class='btn-sections'>
 
         <div class='home-section'>
-            <h2>We have a problem</h2>
+            <h2>Join us</h2>
             <p> Motor vehicles contribute to congested streets and 
                 to our ongoing issue of climate change because of their emissions.
                 Not only will our approach leave you with friends, but it will also
@@ -51,6 +76,27 @@
 
     </div>
 
+    <div class="problem-display">
+        <p>
+            In our modern world, there are countless ways to commute: public transportation, 
+            taxis, taxi companies, bikes, motorcycles, etc.
+            <br>
+            <br>
+            Why, out of all of these options, would you carpool? 
+            <br>
+            The answer is simple. 
+            Millions of cars are used on a daily basis, and unfortunately there are problems
+            that arise when using so many motorized vehicles. Having this many cars on the road
+            causes issues that are inconvenient to everyone such as heavy traffic, pollution, a
+            depletion of natural resources, and safety hazards. 
+            <br>
+            <br>
+            When you sign up with On Our Way, you can feel proud as the users of this app will not
+            actively contribute to these inconveniences. Instead, you can have a good time with some
+            great people. 
+        </p>
+    </div>
+
     <footer>
         <ul class='nav-links'>
             <li><a>Home</a></li>
@@ -63,5 +109,7 @@
         </ul>
 
     </footer>
+
+    <script src='{{url_for("static", filename="site.js")}}'></script>
 </body>
 </html>
