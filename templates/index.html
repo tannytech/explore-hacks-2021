@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Home</title>
 </head>
 <body>
-    <h1>Home page</h1>
+
+    <nav>
+        <h1>Home page</h1>
+        <ul>
+            <li><a href='/'>Home</a></li>
+            <li><a href='/templates/network.html'>Network</a></li>
+            <li><a href='/login'>Login</a></li>
+        </ul>
+    </nav>
+
+    <div class='intro-box'>
+        <img src='apple_map.jpeg'>
+    </div>
+
+    <div class='btn-sections'>
+
+        <div class='home-section'>
+            <h2>We have a problem</h2>
+            <p> Motor vehicles contribute to congested streets and 
+                to our ongoing issue of climate change because of their emissions.
+                Not only will our approach leave you with friends, but it will also
+                help our world tremendously! 
+                Join us in our mission to reduce heavy traffic in your city.</p>
+            <div class='btn-link start'>
+                <p>Get started</p>
+            </div>
+        </div>
+
+        <div class='home-section'>
+            <h2>Friends</h2>
+            <p>The best part about carpooling is that you get to be with
+                friends and build networks. Therefore, you will not have to experience
+                one of those long, awkward car rides that you may experience with other 
+                drivers!
+            </p>
+            <div class='btn-link friends'>
+                <p>Connect now</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <ul class='nav-links'>
+            <li><a>Home</a></li>
+            <li><a>Network</a></li>
+            <li><a>Log-in</a></li>
+        </ul>
+
+        <ul class='about'>
+            <li><a>Our Mission</a></li>
+        </ul>
+
+    </footer>
 </body>
 </html>

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    color: white;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    z-index: 999;
+    top: 0;
+}
+
+nav h1{
+    margin-left: 2%;
+}
+
+nav ul{
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-right: 2%;
+}
+
+nav li{
+    list-style: none;
+}
+nav li a{
+    display: flex;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 500ms;
+}
+
+nav li a:hover{
+    color: rgb(255, 166, 0);
+    cursor: pointer;
+}
+
+.intro-box{
+    background: rgb(230, 230, 230);
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+}
+
+
+.btn-sections{
+    position:relative;
+    top: 80vh;
+    margin-top: 25px;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-section{
+    background: rgb(240, 240, 240);
+    width: 30%;
+    height: 50vh;
+    text-align: center;
+    color:rgb(92, 92, 92);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -10px 10px 15px rgba(0,0,0,0.2);
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.home-section h2{
+    margin-top: 15px;
+}
+
+.home-section p {
+    margin-top: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.btn-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 30%;
+    height: 10%;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: 500ms;
+    border: gray 2px solid;
+}
+
+.btn-link p{
+    margin: 0;
+}
+
+.btn-link.start{
+    background:rgb(255, 189, 68);
+}
+.btn-link.friends{
+    background:rgb(151, 205, 255);
+}
+
+.btn-link.start:hover{
+    background:rgb(255, 206, 116);
+}
+
+.btn-link.friends:hover{
+    background:rgb(193, 225, 255);
+}
+
+footer{
+    background: rgb(77, 77, 77);
+    position: relative;
+    top: 100vh;
+    width: 100%;
+    height: 400px;
+    color: white;
+}

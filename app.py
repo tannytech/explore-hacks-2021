@@ -1,11 +1,18 @@
-from flask import Flask, template_render
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
 @app.route('/home')
 def home():
-    return template_render('index.html')
+    return render_template('index.html')
+
+# @app.route('/network')
+# def login():
+#     return render_template('network.html')
+@app.route('/login')
+def login():
+    return render_template('login.html')
 
 
 if __name__ == '__main__':
-    app.run('FLASK_DEBUG=1')
+    app.run(debug=True)
