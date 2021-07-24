@@ -13,7 +13,8 @@ def home():
 @app.route('/network')
 def network():
     contacts=["Name 1", "Name 2", "Name 3", "Name 1", "Name 2", "Name 3" ]
-    return render_template('network.html', contacts=contacts)
+    search_results=["Account1", "Account2", "Account3"]
+    return render_template('network.html', contacts=contacts, sr=search_results)
 
 
 #Login

@@ -30,10 +30,31 @@
             {% for person in contacts %}
                 <li> {{ person }} </li>
             {% endfor %}
-
         </ul>
     </div>
 
+    <div class="searchbar" >
+        <input type="text" placeholder='Search for friends...'>
+        <i class="fas fa-search"></i>
+
+        <div class="auto-complete-box">
+            <ul class='results'>
+                {% for result in sr %}
+                    <li>{{result}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+    <p class='map'>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380513.
+        7159953019!2d-88.01214843407938!3d41.833392503391295!2m3!1f0!2f0!3f0!3m2!1i1024
+        !2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!
+        5e0!3m2!1sen!2sus!4v1627153132375!5m2!1sen!2sus" width="800" height="600" 
+        style="border:0;" 
+    allowfullscreen="" loading="lazy" class='map-frame'></iframe>
+    </p>
 
     <script src='{{url_for("static", filename="js/site.js")}}'></script>
 </body>

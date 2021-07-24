@@ -7,7 +7,7 @@
 
 .friends-container{
     position: relative;
-    margin-left: 50px;
+    margin-left: 30px;
     top: 85px;
     height: 80px;
     width: 320px;
@@ -71,6 +71,36 @@
     background: black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
+
+}
+
+.map{
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+    border: gainsboro 1px solid;
+}
+
+.searchbar{
+    position: absolute;
+    left: 380px;
+    width: 320px;
+}
+
+.searchbar input{
+    outline: none;
+    border: none;
+    width: 90%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.searchbar ul{
+    margin-top: 10px;
+}
+.searchbar ul li{
+    list-style:none;
+    border-bottom: gainsboro 1px solid;
+    width: 90%;
+    margin-left: 10px;
 
 }
