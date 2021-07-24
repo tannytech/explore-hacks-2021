@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='network.css') }}">
+    <script src="https://kit.fontawesome.com/cc5215791e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/network.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Network</title>
 </head>
 <body>
     <nav>
@@ -15,15 +16,25 @@
         <ul>
             <li><a href='/'>Home</a></li>
             <li><a href='/network'>Network</a></li>
-            <li><a href='/login'>Login</a></li>
+            <li><a href='/login'>Login/Register</a></li>
         </ul>
     </nav>
 
-    <div id="friends-dropdown" class=''>
+    <div class='friends-container'>
+        <div id='friends-dropdown-btn' class=''>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <p>View Network</p>
 
+        <ul id="friends-dropdown" class=''>
+            {% for person in contacts %}
+                <li> {{ person }} </li>
+            {% endfor %}
+
+        </ul>
     </div>
 
 
-    <script src='{{url_for("static", filename="site.js")}}'></script>
+    <script src='{{url_for("static", filename="js/site.js")}}'></script>
 </body>
 </html>

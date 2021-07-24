@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='login.css') }}">
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type='text/css' href="{{ url_for('static', filename='css/login.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
@@ -15,11 +15,11 @@
         <ul>
             <li><a href='/'>Home</a></li>
             <li><a href='/network'>Network</a></li>
-            <li><a href='/login'>Login</a></li>
+            <li><a href='/login'>Login/Register</a></li>
         </ul>
     </nav>
 
-    <div class="login-box">
+    <div id="login-box" class=''>
         <div class='user-input username'>
             <h2>Username: </h2>
             <input type='text' size='35'>
@@ -29,13 +29,48 @@
             <input type='password' size='35'>
         </div>
 
-        <div class="sign-in-confirm">
+        <div class="log-in-confirm">
             <h4>Log in</h4>
+        </div>
+
+        <div id="no-acc" class=''>
+            <a>Need an account?</a>
         </div>
     </div>
 
-    <div class="no-acc">
-        <a>Need an account?</a>
+
+    <div id='signin-box'>
+        <div class='user-input firstname'>
+            <h2>Your first name: </h2>
+            <input type='text' size='35'>
+        </div>
+
+        <div class='user-input username'>
+            <h2>Username: </h2>
+            <input type='text' size='35'>
+        </div>
+
+        <div class='user-input email'>
+            <h2>Email Address:  </h2>
+            <input type='text' size='35'>
+        </div>
+
+        <div class='user-input password'>
+            <h2>Password: </h2>
+            <input type='password' size='35'>
+        </div>
+
+        <div class='user-input confirm-password'>
+            <h2>Re-enter password: </h2>
+            <input type='password' size='35'>
+        </div>
+
+        <div class="sign-in-confirm">
+            <h4>Register</h4>
+        </div>
+
     </div>
+
+    <script src='{{url_for("static", filename="js/register.js")}}'></script>
 </body>
 </html>

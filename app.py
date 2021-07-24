@@ -1,15 +1,22 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+
+#Home
 @app.route('/')
 @app.route('/home')
 def home():
     return render_template('index.html')
 
+
+#Network
 @app.route('/network')
 def network():
-    return render_template('network.html')
+    contacts=["Name 1", "Name 2", "Name 3", "Name 1", "Name 2", "Name 3" ]
+    return render_template('network.html', contacts=contacts)
 
+
+#Login
 @app.route('/login')
 def login():
     return render_template('login.html')
