@@ -12,3 +12,6 @@ The Guest account for you to try out is:
 username: Guest1
 password: GuestPassword
 
+To run, open with:
+python 'app.py'
+
