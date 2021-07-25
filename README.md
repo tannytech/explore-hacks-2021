@@ -3,3 +3,5 @@
 What we installed:
 Flask
 flask_sqlalchemy 
+
+*NON-RESPONSIVE*
