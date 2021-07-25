@@ -12,11 +12,11 @@
 </head>
 <body>
     <nav>
-        <h1>Home page</h1>
+        <h1>On The Way</h1>
         <ul>
             <li><a href='/'>Home</a></li>
             <li><a href='/network'>Network</a></li>
-            <li><a href='/login'>Login/Register</a></li>
+            <li><a href='/login'> {{user}} </a></li>
         </ul>
     </nav>
 
@@ -28,11 +28,13 @@
 
         <ul id="friends-dropdown" class=''>
             {% for person in contacts %}
-                <li> {{ person }} </li>
+                <li id='result' class=''> {{ person.username }} </li>
             {% endfor %}
         </ul>
     </div>
 
+
+    
     <div class="searchbar" >
         <input type="text" placeholder='Search for friends...'>
         <i class="fas fa-search"></i>
@@ -40,9 +42,13 @@
         <div class="auto-complete-box">
             <ul class='results'>
                 {% for result in sr %}
-                    <li>{{result}}</li>
+                    <li id='result' class=''>
+                        {{result.username}} 
+
+                    </li> 
+                    
                 {% endfor %}
-            </ul>
+            </ul> 
         </div>
 
     </div>

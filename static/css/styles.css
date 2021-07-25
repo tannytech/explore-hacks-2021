@@ -142,13 +142,14 @@ nav li a:hover{
     position: relative;
     margin-top: 40px;
     border-radius: 10px;
-    width: 30%;
+    width: 40%;
     height: 10%;
     margin-bottom: 25px;
     cursor: pointer;
     transition: 500ms;
     border: gray 2px solid;
     color:whitesmoke;
+    text-decoration: none;
 }
 
 .btn-link p{

@@ -6,3 +6,10 @@ friendsListBtn.addEventListener('click', () => {
     friendsListBtn.classList.toggle('active')
 })
 
+
+
+const circle = document.getElementById('friends-circle')
+
+circle.addEventListener('click', ()=>{
+    circle.classList.toggle('active')
+})

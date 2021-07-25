@@ -104,3 +104,22 @@
     margin-left: 10px;
 
 }
+
+#result:hover{
+    background: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+
+#friends-circle{
+    position: absolute;
+    border-radius: 50px;
+    background: red;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+#friends-circle.active{
+    background: rgb(52, 255, 52);
+}
