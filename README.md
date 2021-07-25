@@ -1,5 +1,7 @@
 # explore-hacks-2021
 
+Names: Tanish Khadse, Kevin Lu
+
 What we installed:
 Flask
 flask_sqlalchemy 
